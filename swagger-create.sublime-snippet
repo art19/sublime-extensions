@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+
+swagger_api :create do
+  summary  "Creates a ${1:Model name}"
+  param    :body, :body, :$1, :required, "$1"
+  consumes %w{application/vnd.art19.v0+json}
+  response :created, "$1 was created"
+  response :unauthorized
+  response :unprocessable_entity
+  response :not_acceptable
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>swag-create</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>

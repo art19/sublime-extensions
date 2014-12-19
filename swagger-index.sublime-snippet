@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+
+swagger_api :index do
+  summary  "Fetches ${1}"
+  param    :query, "ids[]", :string, :optional, "$1 IDs"
+  response :ok, "Success"
+  response :unauthorized
+  response :not_acceptable
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>swag-index</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>

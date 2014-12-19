@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+
+swagger_api :show do
+  summary  "Fetches a specific ${1}"
+  param    :path, :id, :string, :required, "$1 ID"
+  response :ok, "Success"
+  response :unauthorized
+  response :not_found
+  response :not_acceptable
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>swag-show</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>

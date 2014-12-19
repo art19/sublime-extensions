@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+
+swagger_api :update do
+  summary  "Updates a ${1:Model name}"
+  param    :path, :id, :string, :required, "$1 ID"
+  param    :body, :body, :$1, :required, "$1"
+  consumes %w{application/vnd.art19.v0+json}
+  response :ok, "Success"
+  response :unauthorized
+  response :unprocessable_entity
+  response :not_acceptable
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>swag-update</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>
