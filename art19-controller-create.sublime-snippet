@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+
+respond_to do |format|
+  if @${1}.save
+    format.art19v0 { render json: @$1, status: :created, location: $1_url(@$1) }
+  else
+    format.art19v0 { render json: { errors: @$1.errors }, status: :unprocessable_entity }
+  end
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>art19v0-cont-create</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>
