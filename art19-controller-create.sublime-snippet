@@ -10,7 +10,7 @@ respond_to do |format|
 end
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>art19v0-cont-create</tabTrigger>
+  <tabTrigger>art19v0-ctr-create</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.ruby</scope>
 </snippet>
