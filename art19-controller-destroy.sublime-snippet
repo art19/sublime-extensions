@@ -3,7 +3,7 @@
 
 respond_to do |format|
   if @${1}.destroy
-    format.art19v0 { render json: @$1, status: :created, location: $1_url(@$1) }
+    format.art19v0 { render json: @$1 }
   else
     format.art19v0 { render json: @$1, serializer: ErrorSerializer, status: :unprocessable_entity }
   end
