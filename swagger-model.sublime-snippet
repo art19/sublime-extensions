@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+swagger_model :${1:model_name} do
+  description "${2:Description}"
+  property :${3:property}, :${4:boolean|date|float|integer|string}, :${5:required|optional}, "${6:Description}"
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>swag-model</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>
