@@ -1,12 +1,12 @@
 <snippet>
   <content><![CDATA[
 
-    @${1} = ${2:Modelname}.order(:created_at)
-    @$1 = @$1.where(:id => params[:ids]) if params[:ids].present?
+@${1} = ${2:Modelname}.order(:created_at)
+@$1 = @$1.where(id: params[:ids]) if params[:ids].present?
 
-    respond_to do |format|
-      format.art19v0 { render json: @$1 }
-    end
+respond_to do |format|
+  format.art19v0 { render json: @$1 }
+end
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>art19v0-ctr-index</tabTrigger>
