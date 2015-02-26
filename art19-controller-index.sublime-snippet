@@ -1,8 +1,9 @@
 <snippet>
   <content><![CDATA[
 
-@${1} = ${2:Modelname}.order(:created_at)
+@${1} = ${2:Modelname}.order(sort_order || default_sort_order)
 @$1 = @$1.where(id: params[:ids]) if params[:ids].present?
+@$1 = @$1.page(@page).per(@per_page)
 
 respond_to do |format|
   format.art19v0 { render json: @$1 }
