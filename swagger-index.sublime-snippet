@@ -8,6 +8,8 @@ swagger_api :index do
   response :unauthorized
   response :not_acceptable
 end
+# rubocop:enable all
+# :nocov:
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>swag-index</tabTrigger>

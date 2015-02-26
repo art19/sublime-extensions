@@ -1,6 +1,7 @@
 <snippet>
   <content><![CDATA[
-
+# :nocov:
+# rubocop:disable all
 swagger_api :destroy do
   summary  "Deletes a ${1:Model name}"
   param    :path, :id, :string, :required, "$1 ID"
@@ -9,6 +10,8 @@ swagger_api :destroy do
   response :unprocessable_entity
   response :not_acceptable
 end
+# rubocop:enable all
+# :nocov:
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>swag-destroy</tabTrigger>

@@ -1,5 +1,7 @@
 <snippet>
   <content><![CDATA[
+# :nocov:
+# rubocop:disable all
 swagger_controller :${1:controller}, "${2:ModuleName}"
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

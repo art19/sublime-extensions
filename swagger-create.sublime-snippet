@@ -1,6 +1,7 @@
 <snippet>
   <content><![CDATA[
-
+# :nocov:
+# rubocop:disable all
 swagger_api :create do
   summary  "Creates a ${1:Model name}"
   param    :body, :body, :$1, :required, "$1"
@@ -10,6 +11,8 @@ swagger_api :create do
   response :unprocessable_entity
   response :not_acceptable
 end
+# rubocop:enable all
+# :nocov:
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>swag-create</tabTrigger>
