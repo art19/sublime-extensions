@@ -4,6 +4,7 @@
 swagger_api :index do
   summary  "Fetches ${1}"
   param    :query, "ids[]", :string, :optional, "$1 IDs"
+  param    :query, 'sort[KEY]', :string, :optional, 'How to sort. Replace KEY with the attribute you want to sort by, and the value must be "asc" or "desc".'
   response :ok, "Success"
   response :unauthorized
   response :not_acceptable
